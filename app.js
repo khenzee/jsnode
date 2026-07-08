@@ -1,8 +1,9 @@
 /*
  variable
  data types
- operatons
+ operations
  conditionals
+ functions
  loops
  array
  ES6
@@ -100,6 +101,100 @@ let developers = [
             name: "FC25",
             level: "pro"
         }
-    }
+    }  
 ]
-console.log(developers[2].hobby[1])
+
+// console.log(developers[2].hobby[1])
+
+
+// Arithemetic Operation, Comparison Operator, logical Operation.
+
+//ARITHEMETIC OPERATOR
+const add = 2 + 2 // 4 addition
+const subtract = 2 - 2 // 0 subtraction
+const multiply = 2 * 2 // 4 multiplication
+const divide = 2 / 2 // 1 division
+const expo = 2 ** 2 // 4 exponential
+const mod = 3 % 2 // 1 modulus: means remainder
+
+// COMPERISON OPERATOR
+
+const gt = 2 > 6 // false greater then
+const lt = 2 < 6 // true lesser than
+const  gte = 2 >= 6 // false greater than or equal to
+const lte = 6 <= 6 // true less than or equal to
+const de = "daniel" == "daniel" // Double equal sign: compares the value [true/false]
+const te = "tj" === "tj"  //Triple equal sign: compares the value and data type [true/false]
+
+
+// console.log(te)
+
+// LOGICAL OPERATOR: AND, OR, NOT
+
+//AND &&: both sides must be true for the result to be "TRUE"
+
+// console.log(lt && gte)
+
+//OR ||: As long as one side is true, then the result will be "TRUE"
+// console.log(false || gte)
+
+//NOT !: means opposite
+// console.log(!gt)
+
+// CONDITIONALS
+// if(condition){
+//     action
+// }
+// else if(condition){
+//     action
+// }
+// else{
+//     run-this-instead
+// }
+
+if (2 > 6){
+    console.log("awesome")
+}
+else if(2 < 1){
+    console.log("working")
+}
+else{
+ console.log("not awesome")
+}
+
+
+//example 2
+
+let valued = false
+let word = "valuable"
+
+ if (valued){
+    console.log(valued)
+ }
+ else if(word === "valuabl"){
+  
+    console.log("works")
+ }
+else if(word ===! "valuable"){
+    console.log("does not work")
+ }
+ else{
+    word = "invaluable"
+    console.log(word)
+ }
+
+ // SWITCH
+
+let day = "sunday"
+
+ switch (day) {
+    case "monday":
+        console.log("go to class")
+        break;
+    case "tuesday":
+        console.log("go have fun")
+        break;
+    default:
+        console.log("enjoy")
+        break;
+ }
