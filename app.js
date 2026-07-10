@@ -14,40 +14,39 @@
 
 //Variables: LET, CONST, VAR.
 
-
 // LET variable is block scoped but can be mutated
-// let age = 30
-// age = 50
+let age = 30
+age = 50
 
-// console.log(age)
+console.log(age)
 
-// function val(){
-//     let age = 70
-//     ageOf =50
-//     console.log(ageOf)
-// }
+function val(){
+    let age = 70
+    ageOf =50
+    console.log(ageOf)
+}
 
-// val()
+val()
 
 
-//CONST variable is block scoped but can't be mutated
-// const name = "daniel"
+// CONST variable is block scoped but can't be mutated
+const name = "daniel"
 
-// console.log(name)
+console.log(name)
 
-// function val1(){
-//     const name = "tj"
-//    console.log(name)
-// }
+function val1(){
+    const name = "tj"
+   console.log(name)
+}
 
-// val1()
+val1()
 
-//VAR is outdated and should not be used
-// var password = "123pass"
-// password = "pass123"
-// var password = "pass"
+// VAR is outdated and should not be used
+var password = "123pass"
+password = "pass123"
+var password = "pass"
 
-// console.log(password)
+console.log(password)
 
 // DATA TYPE: Number, String, Boolean, undefine,Array, Object, function
 
@@ -123,8 +122,8 @@ const gt = 2 > 6 // false greater then
 const lt = 2 < 6 // true lesser than
 const  gte = 2 >= 6 // false greater than or equal to
 const lte = 6 <= 6 // true less than or equal to
-const de = "daniel" == "daniel" // Double equal sign: compares the value [true/false]
-const te = "tj" === "tj"  //Triple equal sign: compares the value and data type [true/false]
+const de = 10 == "10" // Double equal sign: compares the value [true/false]
+const te = 10 === "10"  //Triple equal sign: compares the value and data type [true/false]
 
 
 // console.log(te)
@@ -133,13 +132,13 @@ const te = "tj" === "tj"  //Triple equal sign: compares the value and data type 
 
 //AND &&: both sides must be true for the result to be "TRUE"
 
-// console.log(lt && gte)
+console.log(lt && gte)
 
 //OR ||: As long as one side is true, then the result will be "TRUE"
-// console.log(false || gte)
+console.log(false || gte)
 
-//NOT !: means opposite
-// console.log(!gt)
+// NOT !: means opposite
+console.log(!gt)
 
 // CONDITIONALS
 // if(condition){
