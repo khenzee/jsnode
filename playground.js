@@ -1,0 +1,26 @@
+const myStudents = [
+  { name: "Alice", score: 92 },
+  { name: "Bob", score: 75 },
+  { name: "Charlie", score: 68 }
+]
+
+const assignGrades = (students) => {
+    const gradedStudents = [];
+    for (let i = 0; i <= students.length - 1; i++) {
+        const student = students[i];
+        let grade;
+        if (student.score >= 90) {
+            grade = "A";
+        } else if (student.score >= 80) {
+            grade = "B";
+        } else if (student.score >= 70) {
+            grade = "C";
+        } else {
+            grade = "F";
+        }
+        gradedStudents.push({ name: student.name, score: student.score, grade: grade });
+    }
+    return gradedStudents;
+}
+
+console.log(assignGrades(myStudents));
