@@ -15,38 +15,38 @@
 //Variables: LET, CONST, VAR.
 
 // LET variable is block scoped but can be mutated
-let age = 30
-age = 50
+// let age = 30
+// age = 50
 
-console.log(age)
+// console.log(age)
 
-function val(){
-    let age = 70
-    ageOf =50
-    console.log(ageOf)
-}
+// function val(){
+//     let age = 70
+//     ageOf = 50
+//     console.log(ageOf)
+// }
 
-val()
+// val()
 
 
 // CONST variable is block scoped but can't be mutated
-const name = "daniel"
+// const name = "daniel"
 
-console.log(name)
+// console.log(name)
 
-function val1(){
-    const name = "tj"
-   console.log(name)
-}
+// function val1(){
+//     const name = "tj"
+//    console.log(name)
+// }
 
-val1()
+// val1()
 
 // VAR is outdated and should not be used
-var password = "123pass"
-password = "pass123"
-var password = "pass"
+// var password = "123pass"
+// password = "pass123"
+// var password = "pass"
 
-console.log(password)
+// console.log(password)
 
 // DATA TYPE: Number, String, Boolean, undefine,Array, Object, function
 
@@ -115,6 +115,10 @@ const multiply = 2 * 2 // 4 multiplication
 const divide = 2 / 2 // 1 division
 const expo = 2 ** 2 // 4 exponential
 const mod = 3 % 2 // 1 modulus: means remainder
+let inc = 5
+inc++ // incrementation by 1
+inc-- // DECREMENTATION BY 1
+
 
 // COMPERISON OPERATOR
 
@@ -132,13 +136,13 @@ const te = 10 === "10"  //Triple equal sign: compares the value and data type [t
 
 //AND &&: both sides must be true for the result to be "TRUE"
 
-console.log(lt && gte)
+// console.log(lt && gte)
 
 //OR ||: As long as one side is true, then the result will be "TRUE"
-console.log(false || gte)
+// console.log(false || gte)
 
 // NOT !: means opposite
-console.log(!gt)
+// console.log(!gt)
 
 // CONDITIONALS
 // if(condition){
@@ -151,49 +155,89 @@ console.log(!gt)
 //     run-this-instead
 // }
 
-if (2 > 6){
-    console.log("awesome")
-}
-else if(2 < 1){
-    console.log("working")
-}
-else{
- console.log("not awesome")
-}
+// if (2 > 6){
+//     console.log("awesome")
+// }
+// else if(2 < 1){
+//     console.log("working")
+// }
+// else{
+//  console.log("not awesome")
+// }
 
 
 //example 2
 
-let valued = false
-let word = "valuable"
+// let valued = false
+// let word = "valuable"
 
- if (valued){
-    console.log(valued)
- }
- else if(word === "valuabl"){
+//  if (valued){
+//     console.log(valued)
+//  }
+//  else if(word === "valuabl"){
   
-    console.log("works")
- }
-else if(word ===! "valuable"){
-    console.log("does not work")
- }
- else{
-    word = "invaluable"
-    console.log(word)
- }
+//     console.log("works")
+//  }
+// else if(word ===! "valuable"){
+//     console.log("does not work")
+//  }
+//  else{
+//     word = "invaluable"
+//     console.log(word)
+//  }
 
  // SWITCH
 
 let day = "sunday"
 
- switch (day) {
-    case "monday":
-        console.log("go to class")
-        break;
-    case "tuesday":
-        console.log("go have fun")
-        break;
-    default:
-        console.log("enjoy")
-        break;
- }
+//  switch (day) {
+//     case "monday":
+//         console.log("go to class")
+//         break;
+//     case "tuesday":
+//         console.log("go have fun")
+//         break;
+//     default:
+//         console.log("enjoy")
+//         break;
+//  }
+
+ // FUNCTION: Is a reuseable block of code.
+
+//  function sum(num1, num2){
+//     console.log(num1 + num2)
+//  }
+
+//  sum(8, 7)
+
+ // Arrow function: same but modern way of writing function in JS
+//  const sum1 = (num1, num2) =>{
+//     console.log(num1 + num2)
+//  }
+//   sum1(8, 7)
+
+  //LOOP: FOR loop and WHILE loop
+
+//   for(let i = 0; i <= 10; i++){
+//     console.log(`number ${i}`)
+//   }
+
+
+//  let x = 1
+//   while(x <= 10){
+//     console.log(`number ${x}`)
+//     x++
+//   }
+
+// let jjj = 50
+// let result =` my result is ${jjj}`
+// console.log(result)
+
+
+//ARRAY METHODS
+
+let fruit  = ["cherry", "orange", "apple", "mango"]
+
+res = fruit.slice(0, 3)
+console.log(fruit)
+console.log(res)
