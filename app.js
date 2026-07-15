@@ -236,8 +236,49 @@ let day = "sunday"
 
 //ARRAY METHODS
 
-let fruit  = ["cherry", "orange", "apple", "mango"]
+let fruits  = ["cherry", "orange", "apple", "mango"]
 
-res = fruit.slice(0, 3)
-console.log(fruit)
-console.log(res)
+// res = fruit.slice(0, 3)
+// console.log(fruit)
+// console.log(res)
+
+// for(let i = fruit.length - 1; i >= 0; i-- ){
+//     console.log(fruit[i])
+// }
+
+// array method for iteration: map()  foreach()
+
+// fruits.map((fruit, index)=>{
+//     console.log(`${fruit} is postion ${index}`)
+// })
+//  fruits.forEach((fruit, index)=>{
+//     console.log(`${fruit} is postion ${index}`)
+// })
+
+
+const bks = {
+    name5: "stephen",
+    course: "backend",
+    pc: "hp"
+}
+
+
+const {name5, course, pc} = bks
+console.log(pc)
+
+const bksmod = {level:"50", ...bks }
+console.log(bksmod)
+
+const abc = async () =>{
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
+
+async function abcd(){
+    const data = await fetch("api")
+
+}

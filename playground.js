@@ -1,26 +1,32 @@
-const myStudents = [
-  { name: "Alice", score: 92 },
-  { name: "Bob", score: 75 },
-  { name: "Charlie", score: 68 }
-]
+import{assignGrades, greet} from "./grade.js";
+import readline from "readline"
 
-const assignGrades = (students) => {
-    const gradedStudents = [];
-    for (let i = 0; i <= students.length - 1; i++) {
-        const student = students[i];
-        let grade;
-        if (student.score >= 90) {
-            grade = "A";
-        } else if (student.score >= 80) {
-            grade = "B";
-        } else if (student.score >= 70) {
-            grade = "C";
-        } else {
-            grade = "F";
-        }
-        gradedStudents.push({ name: student.name, score: student.score, grade: grade });
-    }
-    return gradedStudents;
-}
+// const myStudents = [
+//   { name: "Alice", score: 92 },
+//   { name: "Bob", score: 75 },
+//   { name: "Charlie", score: 68 }
+// ]
 
-console.log(assignGrades(myStudents));
+const rl = readline.Interface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+rl.question("what is you name: ", (name)=>{
+    let val = `hello ${name}`
+    console.log(val);
+ rl.close()
+})
+ // ask seccond question
+    rl.question("what class: ", (res)=>{
+        console.log(res)
+        rl.close()
+    })
+
+rl.on("close",()=>{
+    console.log("we are done!")
+    process.exit
+})
+
+// console.log(assignGrades(myStudents));
+
