@@ -18,10 +18,7 @@ rl.question("what is you name: ", (name)=>{
  rl.close()
 })
  // ask seccond question
-    rl.question("what class: ", (res)=>{
-        console.log(res)
-        rl.close()
-    })
+   
 
 rl.on("close",()=>{
     console.log("we are done!")
