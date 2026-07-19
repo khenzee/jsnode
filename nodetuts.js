@@ -49,10 +49,15 @@ import fs from "fs" // fs: file system
 
 //ASYNC / AWAIT
 
-const data = fs.readFileSync("data.json", "utf-8")
 
-const res = JSON.parse(data)
+const searchUser = () =>{
+  const data = fs.readFileSync("data.json", "utf-8")
+  const res = JSON.parse(data)
+  console.log(res)
+}
+searchUser()
 
-console.log(res)
-
-console.log(res[0].name)
+const greet = () =>{
+  return "hello world"
+}
+console.log(greet())
